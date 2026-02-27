@@ -24,19 +24,32 @@ Personal website of Luca Mannella, hosted on GitHub Pages.
 - Navigation to other sections
 
 ### `publications.html`
-- "Selected publications" section with 3 key works:
-  - Security at the Edge for Resource-Limited IoT Devices (Sensors, 2024)
-  - Security Evaluation of Arduino Projects (Sensors, 2023)
-  - PhD thesis on Securing IoT Gateways (2024)
-- "Other publications" section for additional works
-- Each publication includes authors, title, venue, year, and placeholder links
+- **Journal Articles** section with 3 peer-reviewed journal publications
+- **Conference Proceedings** section with 10 conference papers
+- **Theses** section with Ph.D. dissertation (2024) and M.Sc. thesis (2018)
+- Each publication includes:
+  - Full author list (user's name in bold)
+  - Complete title and venue information
+  - Publication year
+  - DOI links for all publications
+  - PoliTO IRIS institutional handle links (11583/*)
+  - PDF links where applicable (e.g., CEUR-WS proceedings)
+- Thesis entries include links to institutional repository pages and direct PDF downloads
 
 ### `cv.html`
-- **Current Position**: Postdoctoral Researcher at Politecnico di Torino (2024–present)
-- **Previous Positions**: Ph.D. student, IoT researcher at LINKS Foundation
+- **Current Position** (2020–present): Researcher/Postdoctoral Researcher and Teaching Assistant at Politecnico di Torino
+  - Research Activity: Member of SMILIES research group, automotive cybersecurity (COLTRANE-V, SOCMATI)
+  - Teaching Activity: "Applicazioni Web I"/"Web Application I" (since 2021), "Algorithms and Programming" (since 2024)
+- **Previous Positions**: Detailed work history in reverse chronological order
+  - IEEE-Eta Kappa Nu Mu Nu Chapter (2017–2025): HR roles and tutoring
+  - LINKS Foundation (2018–2020): IoT & Pervasive Technologies Researcher
+  - JEToP (2016–2018): Marketing and Communication roles
+  - Teaching Assistant Student at Politecnico (2015–2017)
+  - TAKE OFF SRL (2013–2014): Android Developer internship
 - **Education**: Ph.D., M.Sc., B.Sc. in Computer Engineering (Politecnico di Torino)
-- **Teaching**: Adjunct lecturer and teaching assistant since 2020
+  - Includes thesis links for both Ph.D. (institutional repository + PDF) and M.Sc. (web thesis + PDF)
 - **Research Interests**: Listed with focus areas
+- **Links**: Extensive linking to institutions (Politecnico, DAUIN, SMILIES), courses, projects, organizations (IEEE-HKN, LINKS, JEToP)
 - Download CV button (placeholder link)
 
 ### `contact.html`
