@@ -10,12 +10,14 @@
   year = {2025}, month={10},
   publisher = {Association for Computing Machinery (ACM)},
   address = {New York, NY, USA},
-  doi = {10.1145/3736130.3762690},
   url = {https://doi.org/10.1145/3736130.3762690},
   abstract = {
     LLMs are gaining traction in cybersecurity applications, offering both promising opportunities and potential new risks. The use of these models in sub-domains such as automotive is still in its early stages. In this work-in-progress study, we use GPT-4o from OpenAI to generate a preliminary set of domain-relevant cybersecurity questions exploiting the auto-ISAC framework, which we then refined through manual validation. We exploited the final set of 25 questions to evaluate the performance of five LLMs models. Then, these questions were administered through a survey to a group of 17 domain experts, allowing us to compare this baseline with the results from the LLMs. From our preliminary findings, we found that LLMs reached a mean of 91.2\% of correct answers on the test while human experts' performance reached 64.7\%. This study lays the groundwork for future investigations into the use of LLMs in the automotive-security domain and into the safe.
   },
-  keywords = {Automotive, Cybersecurity, LLM assessment, auto-ISAC},
+  keywords = {
+    Automotive, Cybersecurity, LLM assessment, auto-ISAC
+  },
+  doi = {10.1145/3736130.3762690},
 }
 
 @inproceedings{Esposito2025SplitComputing,
@@ -24,6 +26,7 @@
     booktitle={2025 IEEE 31st International Symposium on On-Line Testing and Robust System Design (IOLTS)}, 
     year={2025}, month={7},
     pages={1-7},
+    ISSN={1942-9401},
     abstract={
         Split Computing has emerged as a promising paradigm for deploying Deep Neural Networks in Edge and Internet of Things systems, enabling inference tasks to be distributed between resource-constrained edge devices and cloud servers. This approach is particularly attractive for autonomous systems, where security and reliability may be critical. However, interme-diate feature maps transmitted between devices are vulnerable to corruption, which may result from intentional adversarial attacks or unintentional hardware faults. Distinguishing whether corruption originates from an external adversary or an inherent system fault is crucial for implementing appropriate counter-measures-reinforcing security mechanisms against attacks or improving system reliability to mitigate the effects of hardware-related faults. To the best of our knowledge, this work is the first to propose a machine learning-based classification mechanism capable of differentiating adversarial attacks from hardware defects in Split Computing systems. The proposed approach analyzes the intermediate feature maps transmitted from the edge device to the server, classifying the source of corruption to guide appropriate responses. Experimental results demonstrate that one of the proposed classifiers can distinguish between intentional and unintentional feature map corruptions with an accuracy of 93.91 \%.
     },
@@ -31,39 +34,44 @@
         Computer vision;Cloud computing;Computer network reliability;Reliability engineering;Hardware;Security;Servers;Internet of Things;System analysis and design;Testing;Internet of Things (loT);Split Computing (SC);Reliability;Security;Computer Vision;Anomaly classification
     },
     doi={10.1109/IOLTS65288.2025.11116959},
-    ISSN={1942-9401},
 }
 
 @inproceedings{scarano2024socialmediashapesecurity,
-    title={Can social media shape the security of next-generation connected vehicles?}, 
-    author={Scarano, Nicola and Mannella, Luca and Savino, Alessandro  and Di Carlo, Stefano},
-    booktitle={IOLTS 2024: The 30th IEEE International Symposium on On-Line Testing and Robust System Design},
-    year={2024}, month={7},
-    address={Rennes, France},
-    organization={Institute of Electrical and Electronics Engineers ({IEEE})},
-    abstract={
-        The increasing adoption of connectivity and electronic components in vehicles makes these systems valuable targets for attackers. While automotive vendors prioritize safety, there remains a critical need for comprehensive assessment and analysis of cyber risks. In this context, this paper proposes a Social Media Automotive Threat Intelligence (SOCMATI) framework, specifically designed for the emerging field of automotive cybersecurity. The framework leverages advanced intelligence techniques and machine learning models to extract valuable insights from social media. Four use cases illustrate The framework’s potential by demonstrating how it can significantly enhance threat assessment procedures within the automotive industry.
-    },
-    keywords={Industries;Social networking (online);Shape;Machine learning;Threat assessment;Safety;System analysis and design;Online Social Networks;Cyber Threat Intelligence;Automotive Security;Threat assessment},
-    doi={10.1109/IOLTS60994.2024.10616053},
-    ISSN={1942-9401},
+  title={Can social media shape the security of next-generation connected vehicles?}, 
+  author={Scarano, Nicola and Mannella, Luca and Savino, Alessandro  and Di Carlo, Stefano},
+  booktitle={IOLTS 2024: The 30th IEEE International Symposium on On-Line Testing and Robust System Design},
+  year={2024}, month={7},
+  address={Rennes, France},
+  organization={Institute of Electrical and Electronics Engineers ({IEEE})},
+  ISSN={1942-9401},
+  abstract={
+    The increasing adoption of connectivity and electronic components in vehicles makes these systems valuable targets for attackers. While automotive vendors prioritize safety, there remains a critical need for comprehensive assessment and analysis of cyber risks. In this context, this paper proposes a Social Media Automotive Threat Intelligence (SOCMATI) framework, specifically designed for the emerging field of automotive cybersecurity. The framework leverages advanced intelligence techniques and machine learning models to extract valuable insights from social media. Four use cases illustrate The framework’s potential by demonstrating how it can significantly enhance threat assessment procedures within the automotive industry.
+  },
+  keywords={
+    Industries;Social networking (online);Shape;Machine learning;Threat assessment;Safety;System analysis and design;Online Social Networks;Cyber Threat Intelligence;Automotive Security;Threat assessment
+  },
+  doi={10.1109/IOLTS60994.2024.10616053},
 }
 
+
 @inproceedings{CARACAS2024,
-    title={{CARACAS: vehiCular ArchitectuRe for detAiled Can Attacks Simulation}}, 
-    author={Misto Kirdi, Sadek and Scarano, Nicola and Oberti, Franco and Mannella, Luca and Di Carlo, Stefano and Savino, Alessandro},
-    booktitle={IEEE ISCC 2024: 29th IEEE Symposium on Computers and Communications (ISCC)},
-    year={2024}, month={6},
-    address={Paris, France},
-    organization={Institute of Electrical and Electronics Engineers ({IEEE})},
-    pages={1-6},
-    keywords={Analytical models;Torque;Systematics;Torque control;Electric vehicles;Data models;Trajectory;Torque measurement;Computer security;Synthetic data;Automotive Security;Battery Electric Vehicles;CAN attacks;Cybersecurity;Vehicular Systems},
-    doi={10.1109/ISCC61673.2024.10733705},
-    ISSN={2642-7389},
-    abstract={
-        Modern vehicles are increasingly vulnerable to attacks that exploit network infrastructures, particularly the Controller Area Network (CAN) networks. To effectively counter such threats using contemporary tools like Intrusion Detection Systems (IDSs) based on data analysis and classification, large datasets of CAN messages become imperative. This paper delves into the feasibility of generating synthetic datasets by harnessing the modeling capabilities of simulation frameworks such as Simulink coupled with a robust representation of attack models to present CARACAS, a vehicular model, including component control via CAN messages and attack injection capabilities. CARACAS showcases the efficacy of this methodology, including a Battery Electric Vehicle (BEV) model, and focuses on attacks targeting torque control in two distinct scenarios.
-    },
+  title={{CARACAS: vehiCular ArchitectuRe for detAiled Can Attacks Simulation}}, 
+  author={Misto Kirdi, Sadek and Scarano, Nicola and Oberti, Franco and Mannella, Luca and Di Carlo, Stefano and Savino, Alessandro},
+  booktitle={IEEE ISCC 2024: 29th IEEE Symposium on Computers and Communications (ISCC)},
+  year={2024}, month={6},
+  address={Paris, France},
+  organization={Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages={1-6},
+  ISSN={2642-7389},
+  abstract={
+    Modern vehicles are increasingly vulnerable to attacks that exploit network infrastructures, particularly the Controller Area Network (CAN) networks. To effectively counter such threats using contemporary tools like Intrusion Detection Systems (IDSs) based on data analysis and classification, large datasets of CAN messages become imperative. This paper delves into the feasibility of generating synthetic datasets by harnessing the modeling capabilities of simulation frameworks such as Simulink coupled with a robust representation of attack models to present CARACAS, a vehicular model, including component control via CAN messages and attack injection capabilities. CARACAS showcases the efficacy of this methodology, including a Battery Electric Vehicle (BEV) model, and focuses on attacks targeting torque control in two distinct scenarios.
+  },
+  keywords={
+    Analytical models;Torque;Systematics;Torque control;Electric vehicles;Data models;Trajectory;Torque measurement;Computer security;Synthetic data;Automotive Security;Battery Electric Vehicles;CAN attacks;Cybersecurity;Vehicular Systems
+  },
+  doi={10.1109/ISCC61673.2024.10733705},
 }
+
 
 @inproceedings{IoTProxy2024Crypto,
   title={{Detecting Cryptomining Traffic in IoT Networks}},
@@ -76,7 +84,9 @@
   abstract={
     With the proliferation of Internet of Things (IoT) devices in smart home environments, the threat landscape has expanded to include cryptojacking attacks, which exploit computational resources for unauthorized cryptocurrency mining. In response to these challenges, this paper extends the security capability of the IoT Proxy---a recently proposed solution to enhance the security of resource-constrained IoT devices---allowing users to take advantage of its security functionalities also in smart home environments. By integrating a new machine learning-based cryptojacking detection module, this enhanced version of the IoT Proxy can identify these emerging threats, safeguarding both the integrity and performance of all the devices in the smart home network. The IoT Proxy serves a dual purpose by providing security functionalities for resource-constrained IoT devices and offering additional layers of defense for less constrained devices, thereby ensuring comprehensive protection across the smart home ecosystem. The conducted experiments demonstrate the efficacy of the approach without relying on Deep Packet Inspection (DPI), thus preserving user privacy and making it applicable even to encrypted traffic---a prevailing characteristic of contemporary network communication. 
   },
-  keywords={Performance evaluation;Support vector machines;Privacy;Scalability;Smart homes;Inspection;Internet of Things;Cryptomining;Gateways;Internet of Things (IoT);Intrusion Prevention Systems (IPS);Machine Learning (ML);Network Security},
+  keywords={
+    Performance evaluation;Support vector machines;Privacy;Scalability;Smart homes;Inspection;Internet of Things;Cryptomining;Gateways;Internet of Things (IoT);Intrusion Prevention Systems (IPS);Machine Learning (ML);Network Security
+  },
   doi={10.23919/SpliTech61897.2024.10612663}
 }
 
@@ -90,14 +100,15 @@
   address={Salerno, Italy},
   pages={1--13},
   abstract={
-      This paper presents an approach leveraging machine learning techniques to monitor network traffic in search of vulnerability scanning activities. Indeed, attackers typically perform an initial reconnaissance phase to identify the vulnerabilities their target platforms expose, which they can abuse to perform cyberattacks. Classical network monitoring approaches have multiple limitations. Indeed, they are typically hindered by the presence of encrypted traffic, hamper user privacy resorting to Deep Packet Inspection (DPI), and cannot identify advanced scanning techniques such as slow scans. The research presented in this paper overcomes such limitations through machine learning classifiers that can detect vulnerability scans with flow-level granularity, employing statistical features evaluated on Layer 3 and 4 network packet headers. We demonstrate the feasibility of our approach training classifiers able to detect traffic originated by three well-known vulnerability scanning tools: OpenVAS, sqlmap, and Wapiti. The presented Proof-of-Concept classifiers are characterized by a high classification accuracy, with the best classifier reaching a balanced accuracy of 98\%.
+    This paper presents an approach leveraging machine learning techniques to monitor network traffic in search of vulnerability scanning activities. Indeed, attackers typically perform an initial reconnaissance phase to identify the vulnerabilities their target platforms expose, which they can abuse to perform cyberattacks. Classical network monitoring approaches have multiple limitations. Indeed, they are typically hindered by the presence of encrypted traffic, hamper user privacy resorting to Deep Packet Inspection (DPI), and cannot identify advanced scanning techniques such as slow scans. The research presented in this paper overcomes such limitations through machine learning classifiers that can detect vulnerability scans with flow-level granularity, employing statistical features evaluated on Layer 3 and 4 network packet headers. We demonstrate the feasibility of our approach training classifiers able to detect traffic originated by three well-known vulnerability scanning tools: OpenVAS, sqlmap, and Wapiti. The presented Proof-of-Concept classifiers are characterized by a high classification accuracy, with the best classifier reaching a balanced accuracy of 98\%.
   },
-  keywords={Intrusion Detection Systems (IDS); Intrusion Prevention Systems (IPS); Machine Learning (ML); Network Security; User Privacy; Vulnerability Scanning},
+  keywords={
+    Intrusion Detection Systems (IDS); Intrusion Prevention Systems (IPS); Machine Learning (ML); Network Security; User Privacy; Vulnerability Scanning
+  },
   doi={}
 }
 
-
-@article{Canavese2024Security,
+@article{IoTProxy2024,
   AUTHOR = {Canavese, Daniele and Mannella, Luca and Regano, Leonardo and Basile, Cataldo},
   TITLE = {Security at the Edge for Resource-Limited {IoT} Devices},
   JOURNAL = {Sensors},
@@ -121,12 +132,12 @@
   year={2023}, month={6},
   address={Split/Bol, Croatia},
   pages={1--6},
-  doi={10.23919/SpliTech58164.2023.10193747},
   abstract={
     Smart home systems, including consumer-grade Internet of Things (IoT) devices, are in a dangerous situation. On the one hand, the number of smart homes is increasing. On the other hand, the devices in these dwellings are often affected by vulnerabilities that could be exploited to generate massive (distributed) attacks. To mitigate the issue of having compromised devices involved in such attacks, the Internet Engineering Task Force (IETF) recently proposed a new standard: the Manufacturer Usage Description (MUD).
     The main contribution of this paper is to propose a slightly extended version of the MUD architecture. This architecture is centered around a smart home gateway (SHG) that can be extended through the contributions of plug-in developers. Indeed, our proposed approach allows developers to specify which endpoints their plug-ins need to reach. These requirements will then be processed to generate a consolidated gateway-level MUD file exposed by the SHG itself. Thus, thanks to this solution and developers’ intervention, even devices that are not natively “MUD-enabled” would be protected by the MUD standard if integrated through a proper plug-in. Moreover, these requirements are transparent for the device itself.
     To demonstrate the feasibility of this approach, we realized a proof-of-concept for a widespread open-source smart home gateway: Home Assistant.
-  }
+  },
+  doi={10.23919/SpliTech58164.2023.10193747},
 }
 
 @article{CornoMannella2023security,
@@ -139,11 +150,13 @@
   YEAR = {2023}, MONTH={3},
   ARTICLE-NUMBER = {2740},
   ISSN = {1424-8220},
-  keywords={Arduino; cybersecurity; Do It Yourself (DIY); GitHub; Internet of Things (IoT); hobbyist programmers; novice programmers; security analysis},
-  DOI = {10.3390/s23052740},
   ABSTRACT = {
     Arduino is an open-source electronics platform based on cheap hardware and the easy-to-use software Integrated Development Environment (IDE). Nowadays, because of its open-source nature and its simple and accessible user experience, Arduino is ubiquitous and used among hobbyist and novice programmers for Do It Yourself (DIY) projects, especially in the Internet of Things (IoT) domain. Unfortunately, such diffusion comes with a price. Many developers start working on this platform without having a deep knowledge of the leading security concepts in Information and Communication Technologies (ICT). Their applications, often publicly available on GitHub (or other code-sharing platforms), can be taken as examples by other developers or downloaded and used by non-expert users, spreading these issues in other projects. For these reasons, this paper aims at understanding the current landscape by analyzing a set of open-source DIY IoT projects and looking for potential security issues. Furthermore, the paper classifies those issues according to the proper security category. This study&rsquo;s results offer a deeper understanding of the security concerns in Arduino projects created by hobbyist programmers and the dangers that may be faced by those who use these projects.
-  }
+  },
+  keywords={
+    Arduino; cybersecurity; Do It Yourself (DIY); GitHub; Internet of Things (IoT); hobbyist programmers; novice programmers; security analysis
+  },
+  DOI = {10.3390/s23052740},
 }
 
 @inproceedings{CornoMannella2022ThreatModel,
@@ -154,11 +167,13 @@
   year={2022}, month={7},
   organization={IEEE},
   address={Split/Bol, Croatia},
-  keywords={Cybersecurity, Gateways, Home Assistant, Internet of Things, Threat Modeling, Smart Home},
-  doi={10.23919/SpliTech55088.2022.9854235},
   abstract={
     This paper proposes a threat model for a specific class of components of IoT infrastructures: smart home gateways extensible through plug-ins. The purpose of the proposed model is twofold. From one side, it helps to understand some possible issues that could be generated from a malicious or defective implementation of a plug-in and affect the gateway itself or other smart home devices. Consequently, the model could help programmers of gateway applications, plug-ins, and devices think about possible countermeasures and develop more resilient solutions. On the other side, the model could be regarded as a set of guidelines. Indeed, plug-in developers should not create plug-ins acting like the threats reported in the paper. To provide a first validation of the model, the paper presents a use case based on Home Assistant, an open-source smart home gateway application.
   },
+  keywords={
+    Cybersecurity, Gateways, Home Assistant, Internet of Things, Threat Modeling, Smart Home
+  },
+  doi={10.23919/SpliTech55088.2022.9854235},
 }
 
 @article{CornoMannella2022Helping,
@@ -169,12 +184,14 @@
   pages={261--283},
   year={2022}, month={5},
   publisher={Springer},
-  keywords={AWS; Azure; Cloud; Cybersecurity; Guidelines; IoT; Novice Programmers},
   ISSN={2199-4676},
-  doi={10.1007/s40860-022-00175-4},
   abstract={
-      The development of cloud-connected Internet of Things (IoT) systems is becoming more and more affordable, even to novice programmers, thanks to dedicated cloud platforms that already integrate the core functionality needed by an IoT system. In this context, a growing number of IoT systems are being developed and deployed on open networks, often without integrating adequate security in the process. Novice IoT programmers, in particular, tend to overlook security issues, as confirmed by a small user study. Starting from this risk, the paper analyzes the security features available in two major cloud-IoT platforms (Amazon Web Services and Microsoft Azure) and highlights those settings, tools, and practices designed to ensure more secure implementations. We observed that these platforms would reasonably address many security problems detected in the study, if only the correct features were identified and used. The paper finally contributes a set of guidelines to support novice IoT developers in avoiding the main and recurrent security issues in their projects and better exploiting cloud-IoT platforms’ inherent security features.
-  }
+    The development of cloud-connected Internet of Things (IoT) systems is becoming more and more affordable, even to novice programmers, thanks to dedicated cloud platforms that already integrate the core functionality needed by an IoT system. In this context, a growing number of IoT systems are being developed and deployed on open networks, often without integrating adequate security in the process. Novice IoT programmers, in particular, tend to overlook security issues, as confirmed by a small user study. Starting from this risk, the paper analyzes the security features available in two major cloud-IoT platforms (Amazon Web Services and Microsoft Azure) and highlights those settings, tools, and practices designed to ensure more secure implementations. We observed that these platforms would reasonably address many security problems detected in the study, if only the correct features were identified and used. The paper finally contributes a set of guidelines to support novice IoT developers in avoiding the main and recurrent security issues in their projects and better exploiting cloud-IoT platforms’ inherent security features.
+  },
+  keywords={
+    AWS; Azure; Cloud; Cybersecurity; Guidelines; IoT; Novice Programmers
+  },
+  doi={10.1007/s40860-022-00175-4},
 }
 
 @inproceedings{CornoMannella2021perception,
@@ -186,12 +203,12 @@
   pages={5--15},
   year={2021}, month={6},
   organization={IOS Press},
-  doi={10.3233/AISE210074},
   url={https://doi.org/10.3233/AISE210074},
   abstract={
     It is very hard (or ineffective) to take an old system and add to it security features like plug-ins. Therefore, a computer system is much more reliable designed with the approach of security-by-design. Nowadays, there are several tools, middlewares, and platforms designed with this concept in mind, but they must be appropriately used to guarantee a suitable level of reliability and safety. A securityby-design approach is fundamental when creating a distributed application in the IoT field, composed of sensors, actuators, and cloud services. The IoT usually requires handling different programming languages and technologies in which a developer might not be very expert.
     Through a use case, we analyzed the security of some IoT components of Amazon Web Services (AWS) from a novice programmer’s point of view. Even if such a platform could be secure by itself, a novice programmer could do something wrong and leave some possible attack points to a malicious user. To this end, we also surveyed a small pool of novice IoT programmers from a consulting engineering company. Even if we discovered that AWS seems quite robust, we noticed that some common security concepts are often not clear or applied, leaving the door open to possible issues.
-  }
+  },
+  doi={10.3233/AISE210074},
 }
 
 @inproceedings{Giovannitti2019Evolutionary,
