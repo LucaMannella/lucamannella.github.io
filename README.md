@@ -12,6 +12,7 @@ Personal website of Luca Mannella, hosted on GitHub Pages.
 ├── cv.html             # Curriculum Vitae
 ├── contact.html        # Contact information
 ├── style.css           # Shared stylesheet
+├── assets/bibtex/      # BibTeX citation files (16 files)
 └── README.md           # This file
 ```
 
@@ -34,7 +35,9 @@ Personal website of Luca Mannella, hosted on GitHub Pages.
   - DOI links for all publications
   - PoliTO IRIS institutional handle links (11583/*)
   - PDF links where applicable (e.g., CEUR-WS proceedings)
+  - BibTeX citation files for easy citation management
 - Thesis entries include links to institutional repository pages and direct PDF downloads
+- All publications use the `.publication` class for consistent styling
 
 ### `cv.html`
 - **Current Position** (2020–present): Researcher/Postdoctoral Researcher and Teaching Assistant at Politecnico di Torino
@@ -67,12 +70,32 @@ Personal website of Luca Mannella, hosted on GitHub Pages.
 - **Typography**: System fonts for performance
 - **Layout**: Centered content with 900px max-width
 - **Responsive**: Adapts to 768px and 480px breakpoints
+- **Classes**:
+  - `.publication` – Unified class for all publication entries across pages
+  - `.publication-list` – Container for publication groups
+  - `.cv-entry` – Individual CV entries with title, subtitle, and metadata
+  - `.contact-item` – Contact information cards
 - **Features**:
   - Sticky top navigation with hover effects
-  - Publication cards with subtle styling
+  - Publication cards with subtle box-shadow and left border accent
   - Contact cards with structured layout
-  - Button styling for CV download
+  - Button styling for downloads
   - No animations or decorative clutter
+
+## 📦 Assets
+
+### `/assets/bibtex/`
+- **Master file**: `own-bib.bib` – Contains all 15 publication citations
+- **Individual files**: 15 dedicated `.bib` files with compact, year-prefixed naming:
+  - `2025-SplitComputing.bib`, `2025-llm-auto-isac-assessment.bib`
+  - `2024-security-edge.bib`, `2024-cryptomining-iot-networks.bib`, etc.
+  - `2023-arduino-security-evaluation.bib`, `2023-MUD-SHG.bib`
+  - `2022-novice-developers-cloud-iot.bib`, `2022-TM-SHG.bib`
+  - `2021-perception-security-cloud-iot.bib`
+  - `2019-evolutionary-antivirus-optimization.bib`
+  - `2024-PhD-thesis.bib`, `2018-MSc-thesis.bib`
+- **Usage**: All BibTeX files are linked from publication entries with `target="_blank"` for easy download in new tabs
+- **Researcher-friendly**: Enables other researchers to quickly cite your work
 
 ## 🛠️ Technical Details
 
