@@ -583,6 +583,49 @@ main {
     text-align: center;
 }
 
+/* Compact profile section for homepage */
+.profile-links-section {
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.profile-links-section .profile-grid {
+    margin-bottom: 0;
+}
+
+/* Hero profile links - compact inline style */
+.hero-profiles {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.hero-profile-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-border-accent);
+}
+
+.hero-profile-icon {
+    width: 28px;
+    height: 28px;
+}
+
 
 /* Buttons & Links */
 .btn-download,
