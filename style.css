@@ -32,6 +32,8 @@
     
     /* Container */
     --container-width: 900px;
+    --sticky-header-height: 56px;
+    --page-nav-height: 52px;
 }
 
 /* =====================
@@ -45,6 +47,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--sticky-header-height) + var(--page-nav-height) + 2px);
 }
 
 body {
@@ -133,14 +136,23 @@ main {
 }
 
 .page-nav {
+    position: sticky;
+    top: var(--sticky-header-height);
+    z-index: 50;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     gap: var(--spacing-xs);
-    margin: var(--spacing-sm) 0 var(--spacing-md);
+    max-width: var(--container-width);
+    margin: 0 auto var(--spacing-md);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px var(--spacing-md);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .page-nav a {
@@ -150,18 +162,15 @@ main {
     color: var(--color-text-light);
     font-size: var(--font-size-sm);
     font-weight: 500;
-    padding: 6px 10px;
-    border: 1px solid var(--color-border);
-    border-radius: 999px;
-    background-color: var(--color-bg);
-    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    padding: 10px 14px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
 }
 
 .page-nav a:hover,
 .page-nav a:focus {
-    color: var(--color-accent);
-    border-color: var(--color-border-accent);
-    background-color: var(--color-bg-alt);
+    color: var(--color-text);
+    border-bottom-color: var(--color-accent);
     outline: none;
 }
 
@@ -769,10 +778,15 @@ footer p:last-child {
         --font-size-xl: 20px;
         --spacing-xl: 32px;
         --spacing-section: 40px;
+        --sticky-header-height: 56px;
     }
     
     nav ul {
         gap: 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
     }
 
     nav a {
