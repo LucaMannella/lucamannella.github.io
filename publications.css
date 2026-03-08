@@ -1,0 +1,136 @@
+/* =====================
+   Print Styles for Publications Page
+   ===================== */
+
+/* Hide navigation and interactive elements */
+header,
+.page-nav,
+.bibtex-toggle,
+.bibtex-viewer,
+.quick-links,
+footer {
+    display: none !important;
+}
+
+/* Clean, high-contrast print colors */
+* {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* Full width for print */
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 100%;
+    margin: 0;
+    padding: 1cm;
+}
+
+/* Remove decorative borders and shadows */
+.section,
+.content-section,
+.publication,
+.cv-entry {
+    border: none !important;
+    box-shadow: none !important;
+    background: white !important;
+}
+
+/* Compact spacing for print */
+.hero {
+    margin-bottom: 1cm;
+    padding: 0;
+}
+
+.content-section {
+    margin-bottom: 0.5cm;
+    padding: 0.3cm 0;
+}
+
+/* Prevent awkward page breaks */
+.cv-entry,
+.publication,
+article {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* Ensure readable font sizes */
+body {
+    font-size: 11pt;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 16pt;
+    margin-top: 0.5cm;
+    margin-bottom: 0.3cm;
+}
+
+h3 {
+    font-size: 13pt;
+}
+
+/* Show URLs after links (except internal anchors) */
+a[href]:not([href^="#"]):not([href^="mailto:"]):after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666 !important;
+    word-wrap: break-word;
+}
+
+/* Don't show URLs for download buttons */
+.btn-download:after {
+    content: none !important;
+}
+
+/* Compact lists */
+ul, ol {
+    margin-left: 1.5em;
+}
+
+/* Publication styling */
+.pub-title {
+    font-weight: bold;
+    margin-bottom: 0.2cm;
+}
+
+.pub-authors,
+.pub-venue {
+    margin-bottom: 0.1cm;
+}
+
+.pub-links {
+    font-size: 9pt;
+}
+
+/* CV entry styling */
+.entry-title {
+    font-weight: bold;
+}
+
+.entry-subtitle,
+.entry-meta {
+    margin-bottom: 0.1cm;
+}
+
+/* Remove extra spacing from inline styles */
+[style*="margin"] {
+    margin: 0.2cm 0 !important;
+}
