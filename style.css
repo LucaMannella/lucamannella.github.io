@@ -827,6 +827,7 @@ footer p:last-child {
         --font-size-lg: 16px;
         --spacing-md: 16px;
         --spacing-lg: 20px;
+        --sticky-header-height: 44px;
     }
     
     nav a {
