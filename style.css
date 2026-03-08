@@ -47,7 +47,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: calc(var(--sticky-header-height) + var(--page-nav-height) + 2px);
+    scroll-padding-top: calc(var(--sticky-header-height) + var(--page-nav-height) + var(--spacing-lg) + 2px);
 }
 
 body {
