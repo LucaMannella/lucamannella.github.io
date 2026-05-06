@@ -2,119 +2,54 @@
 
 Personal website of Luca Mannella, hosted on GitHub Pages.
 
-**View the website:** https://lucamannella.github.io
+Website: https://lucamannella.github.io
 
-## 📁 Project Structure
+## Overview
 
-```
-├── index.html           # Home page
-├── publications.html    # Publications and thesis
-├── cv.html             # Curriculum Vitae
-├── contact.html        # Contact information
-├── style.css           # Shared stylesheet
-├── assets/bibtex/      # BibTeX citation files (16 files)
-└── README.md           # This file
-```
+This repository contains a small static academic website with pages for:
 
-## 📄 Pages
+- home and selected publications
+- full publications list and theses
+- CV
+- contact information and academic profiles
 
-### `index.html` (Home)
-- Professional introduction and current role
-- Research interests (Cybersecurity, IoT, HCI, Automotive security)
-- Preview of selected publications with links
-- Navigation to other sections
+The site is intentionally simple to edit and deploy: content is stored directly in HTML files, shared styling lives in a single CSS file, and a small JavaScript file supports the inline BibTeX viewer on the publications page.
 
-### `publications.html`
-- **Journal Articles** section with 3 peer-reviewed journal publications
-- **Conference Proceedings** section with 10 conference papers
-- **Theses** section with Ph.D. dissertation (2024) and M.Sc. thesis (2018)
-- Each publication includes:
-  - Full author list (user's name in bold)
-  - Complete title and venue information
-  - Publication year
-  - DOI links for all publications
-  - PoliTO IRIS institutional handle links (11583/*)
-  - PDF links where applicable (e.g., CEUR-WS proceedings)
-  - BibTeX citation files for easy citation management
-- Thesis entries include links to institutional repository pages and direct PDF downloads
-- All publications use the `.publication` class for consistent styling
+## 📁 Main Files
 
-### `cv.html`
-- **Current Position** (2020–present): Researcher/Postdoctoral Researcher and Teaching Assistant at Politecnico di Torino
-  - Research Activity: Member of SMILIES research group, automotive cybersecurity (COLTRANE-V, SOCMATI)
-  - Teaching Activity: "Applicazioni Web I"/"Web Application I" (since 2021), "Algorithms and Programming" (since 2024)
-- **Previous Positions**: Detailed work history in reverse chronological order
-  - IEEE-Eta Kappa Nu Mu Nu Chapter (2017–2025): HR roles and tutoring
-  - LINKS Foundation (2018–2020): IoT & Pervasive Technologies Researcher
-  - JEToP (2016–2018): Marketing and Communication roles
-  - Teaching Assistant Student at Politecnico (2015–2017)
-  - TAKE OFF SRL (2013–2014): Android Developer internship
-- **Education**: Ph.D., M.Sc., B.Sc. in Computer Engineering (Politecnico di Torino)
-  - Includes thesis links for both Ph.D. (institutional repository + PDF) and M.Sc. (web thesis + PDF)
-- **Research Interests**: Listed with focus areas
-- **Links**: Extensive linking to institutions (Politecnico, DAUIN, SMILIES), courses, projects, organizations (IEEE-HKN, LINKS, JEToP)
-- Download CV button (placeholder link)
+- `index.html` — homepage with short bio, research overview, and selected publications
+- `publications.html` — journal papers, conference papers, and theses
+- `cv.html` — academic and professional background
+- `contact.html` — email, affiliation, and profile links
+- `style.css` — shared site styling and responsive rules
+- `publications.css` — print styling for the publications page
+- `publications.js` — BibTeX toggle/viewer behavior
+- `assets/bibtex/` — individual BibTeX entries and a combined bibliography file
 
-### `contact.html`
-- Institutional email: luca.mannella@polito.it
-- Department affiliation: Politecnico di Torino, DAUIN
-- ORCID: 0000-0001-5738-9094
-- Links to Google Scholar, GitHub, LinkedIn (placeholders)
-- SMILIES research group affiliation
+## Publications Content
 
-## 🎨 Design
+Publication and thesis entries may include:
 
-### `style.css`
-- **Aesthetic**: Clean, academic, professional
-- **Colors**: Neutral palette (grays, whites, minimal blue for links)
-- **Typography**: System fonts for performance
-- **Layout**: Centered content with 900px max-width
-- **Responsive**: Adapts to 768px and 480px breakpoints
-- **Classes**:
-  - `.publication` – Unified class for all publication entries across pages
-  - `.publication-list` – Container for publication groups
-  - `.cv-entry` – Individual CV entries with title, subtitle, and metadata
-  - `.contact-item` – Contact information cards
-- **Features**:
-  - Sticky top navigation with hover effects
-  - Publication cards with subtle box-shadow and left border accent
-  - Contact cards with structured layout
-  - Button styling for downloads
-  - No animations or decorative clutter
+- title, authors, venue, and year
+- DOI, arXiv, institutional repository, or thesis-page links
+- BibTeX download links
+- optional supplementary resources such as slides, videos, and thesis PDFs
 
-## 📦 Assets
+Selected publications shown on the homepage are a curated subset of the full list on `publications.html` and should be kept in sync when featured entries change.
 
-### `/assets/bibtex/`
-- **Master file**: `own-bib.bib` – Contains all 15 publication citations
-- **Individual files**: 15 dedicated `.bib` files with compact, year-prefixed naming:
-  - `2025-SplitComputing.bib`, `2025-llm-auto-isac-assessment.bib`
-  - `2024-security-edge.bib`, `2024-cryptomining-iot-networks.bib`, etc.
-  - `2023-arduino-security-evaluation.bib`, `2023-MUD-SHG.bib`
-  - `2022-novice-developers-cloud-iot.bib`, `2022-TM-SHG.bib`
-  - `2021-perception-security-cloud-iot.bib`
-  - `2019-evolutionary-antivirus-optimization.bib`
-  - `2024-PhD-thesis.bib`, `2018-MSc-thesis.bib`
-- **Usage**: All BibTeX files are linked from publication entries with `target="_blank"` for easy download in new tabs
-- **Researcher-friendly**: Enables other researchers to quickly cite your work
+## Technical Notes
 
-## 🛠️ Technical Details
+- static site, no build step required
+- semantic HTML with shared reusable styling
+- responsive layout for desktop and mobile
+- relative paths for GitHub Pages compatibility
 
-- **Pure HTML & CSS**: No frameworks, no JavaScript
-- **Semantic HTML5**: Proper use of `header`, `nav`, `main`, `section`, `footer`
-- **Relative links**: All links use relative paths for GitHub Pages compatibility
-- **Responsive design**: Mobile-friendly with CSS media queries
-- **Fast loading**: System fonts, minimal external dependencies
+## Maintenance Notes
 
-## 📝 Development Notes
+- when publications are added or edited, update both `publications.html` and any mirrored featured entries in `index.html`
+- keep BibTeX files aligned with publication entries in `assets/bibtex/`
+- prefer README updates that describe structure and behavior rather than hard-coded counts or rapidly changing inventories
 
-- All pages share the same navigation bar for consistency
-- Publication list is easy to update and extend
-- CSS classes are semantic and reusable across pages
-- No build process required; deploy directly
+## Deployment
 
-## 🚀 Deployment
-
-The site deploys automatically to GitHub Pages when changes are pushed:
-1. Update files in the repository
-2. Commit and push changes
-3. Site updates at https://lucamannella.github.io within seconds
+The site is deployed via GitHub Pages. After changes are pushed to the repository, the public site updates automatically.
