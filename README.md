@@ -20,7 +20,7 @@ The site is intentionally simple to edit and deploy: content is stored directly 
 - `index.html` — homepage with short bio, research overview, and selected publications
 - `publications.html` — journal papers, conference papers, and theses
 - `cv.html` — academic and professional background
-- `contact.html` — email, affiliation, and profile links
+- `contact.html` — email, affiliation, profile links, and personal music-project references
 - `style.css` — shared site styling and responsive rules
 - `publications.css` — print styling for the publications page
 - `publications.js` — BibTeX toggle/viewer behavior

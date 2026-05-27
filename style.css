@@ -707,6 +707,40 @@ main {
     text-align: center;
 }
 
+/* Music section visual separator */
+.music-section {
+    position: relative;
+    margin-top: calc(var(--spacing-xl) + var(--spacing-xs));
+    background-color: #eef2f6;
+    border-color: #d4dbe3;
+}
+
+.music-section::before {
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: calc(-1 * (var(--spacing-lg) + var(--spacing-xs)));
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #c9d2dc 18%, #91a4b8 50%, #c9d2dc 82%, transparent 100%);
+}
+
+.music-section h2 {
+    padding-right: 44px;
+}
+
+.music-emoji {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    font-size: 24px;
+    line-height: 1;
+}
+
+.music-section .profile-card {
+    background-color: var(--color-bg);
+}
+
 /* Compact profile section for homepage */
 .profile-links-section {
     padding: var(--spacing-md) 0;
@@ -914,5 +948,11 @@ footer p:last-child {
     .contact-logo-card {
         min-width: auto;
         width: 100%;
+    }
+
+    .music-emoji {
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        font-size: 22px;
     }
 }
