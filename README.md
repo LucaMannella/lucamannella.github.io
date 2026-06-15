@@ -33,6 +33,7 @@ Publication and thesis entries may include:
 - title, authors, venue, and year
 - DOI, arXiv, institutional repository, or thesis-page links
 - BibTeX download links
+- accepted papers before final volume, issue, page, or DOI details are available
 - optional supplementary resources such as slides, videos, and thesis PDFs
 
 Selected publications shown on the homepage are a curated subset of the full list on `publications.html` and should be kept in sync when featured entries change.
